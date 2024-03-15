@@ -1,0 +1,111 @@
+/* General Styles */
+body {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  padding: 0 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Header */
+.header {
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.header img {
+  width: 150px;
+  height: auto;
+  margin-top: 20px;
+  padding-right: 30px;
+}
+..header h3 {
+  color: #2cbfaa;
+}
+.header h1,
+.header h3,
+.header p {
+  margin: 0;
+}
+
+/* Contact Section */
+.contact {
+  background-color: #2cbfaa;
+  padding: 20px;
+}
+
+.contact_list {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.contact_list img {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+}
+
+.contact_list a {
+  color: #fff;
+  text-decoration: none;
+}
+
+/* Skills and Projects Section */
+.skilsAndProjects {
+  padding: 20px;
+}
+
+.skilsAndProjects h2 {
+  color: #2cbfaa;
+}
+
+.project_summary {
+  font-size: 18px;
+  font-weight: 600;
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+.project_tech {
+  display: flex;
+  flex-wrap: wrap;
+}
+.project_tech p {
+  color: #fff;
+  margin-right: 10px;
+  margin-top: 10px;
+  background-color: #2cbfaa;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+/* Media Queries */
+@media only screen and (min-width: 768px) {
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: left;
+  }
+
+  .header img {
+    width: 200px;
+    margin-top: 0;
+  }
+
+  .contact {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .skilsAndProjects {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  }
+}
